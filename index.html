@@ -1,0 +1,201 @@
+index.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tournoi de Maracana TSJ Aziz BALOGOUN</title>
+
+  <!-- Meta pour réseaux sociaux -->
+  <meta name="description" content="Tournoi de Maracana TSJ Aziz BALOGOUN – Promotion de la jeunesse et du fair-play" />
+  <meta property="og:title" content="Tournoi de Maracana TSJ Aziz BALOGOUN" />
+  <meta property="og:description" content="Compétition sportive – Maracana – Jeunesse et cohésion sociale" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0f766e, #115e59);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 2.4em; }
+    header p { margin: 8px 0; font-size: 1.1em; }
+
+    nav {
+      background: #134e4a;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 12px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 { color: #0f766e; margin-bottom: 20px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* Galerie photos */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* Formulaire */
+    form {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      max-width: 600px;
+    }
+    label { display: block; margin-top: 15px; font-weight: 600; }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #0f766e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #134e4a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.9em; }
+      section { padding: 30px 15px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Tournoi de Maracana</h1>
+  <p>TSJ Aziz BALOGOUN</p>
+  <p>Sport • Jeunesse • Fair-play</p>
+</header>
+
+<nav>
+  <a href="#presentation">Présentation</a>
+  <a href="#equipes">Équipes</a>
+  <a href="#galerie">Galerie</a>
+  <a href="#inscription">Inscription</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="presentation">
+  <h2>Présentation</h2>
+  <p>Le tournoi de Maracana <strong>TSJ Aziz BALOGOUN</strong> vise à promouvoir la jeunesse, la cohésion sociale et le talent sportif dans une ambiance fraternelle et compétitive.</p>
+</section>
+
+<section id="equipes">
+  <h2>Équipes participantes</h2>
+  <div class="cards">
+    <div class="card">Équipe A</div>
+    <div class="card">Équipe B</div>
+    <div class="card">Équipe C</div>
+    <div class="card">Équipe D</div>
+  </div>
+</section>
+
+<section id="galerie">
+  <h2>Photos d'archives</h2>
+  <div class="gallery">
+    <img src="photo1.jpg" alt="Match maracana" />
+    <img src="photo2.jpg" alt="Équipe participante" />
+    <img src="photo3.jpg" alt="Supporters" />
+    <img src="photo4.jpg" alt="Finale" />
+  </div>
+  <p style="margin-top:10px">(Remplacer les fichiers par vos vraies photos)</p>
+</section>
+
+<section id="inscription">
+  <h2>Formulaire d'inscription</h2>
+  <form>
+    <label>Nom de l'équipe</label>
+    <input type="text" required />
+
+    <label>Nom du responsable</label>
+    <input type="text" required />
+
+    <label>Téléphone</label>
+    <input type="tel" required />
+
+    <label>Commune / Quartier</label>
+    <input type="text" />
+
+    <label>Catégorie</label>
+    <select>
+      <option>Sénior</option>
+      <option>Junior</option>
+    </select>
+
+    <button type="submit">Envoyer l'inscription</button>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p><strong>Téléphone :</strong> +229 XX XX XX XX</p>
+  <p><strong>Email :</strong> contact@tsj-maracana.com</p>
+</section>
+
+<footer>
+  <p>© 2025 Tournoi de Maracana TSJ Aziz BALOGOUN</p>
+  <p>Site officiel – Version professionnelle</p>
+</footer>
+
+</body>
+</html> 
